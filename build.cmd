@@ -1,4 +1,4 @@
-SOURCE=%~dp0
+set SOURCE=%~dp0
 cd ..
 mkdir build
 cd build
