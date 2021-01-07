@@ -13,5 +13,5 @@ build_script:
 artifacts:
   - path: build/HelloWorld
     name: Hello World OSX
-  - path: build/HelloWorld.exe
+  - path: build/Release/HelloWorld.exe
     name: Hello World Win
