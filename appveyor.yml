@@ -3,5 +3,5 @@ image:
 - Previous Visual Studio 2017
 - macOS
 build_script:
-- sh: build.sh
+- sh: ./build.sh
 - cmd: build.cmd
