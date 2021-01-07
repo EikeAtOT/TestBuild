@@ -10,3 +10,8 @@ image:
 build_script:
 - sh: ./build.sh
 - cmd: build.cmd
+artifacts:
+  - path: ../build/HelloWorld
+    name: Hello World OSX
+  - path: ../build/HelloWorld.exe
+    name: Hello World Win
