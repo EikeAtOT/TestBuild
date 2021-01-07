@@ -3,3 +3,6 @@ jobs:
     osx_image: xcode12.2
     language: cpp
     script: ./build.sh
+  - os: windows
+    language: cpp
+    script: ./build.cmd
