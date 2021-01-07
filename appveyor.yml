@@ -8,10 +8,10 @@ image:
 - Previous Visual Studio 2017
 - macOS
 build_script:
-- sh: ./build.sh
-- cmd: build.cmd
+- sh: ./build/build.sh
+- cmd: build\build.cmd
 artifacts:
-  - path: ../build/HelloWorld
+  - path: build/HelloWorld
     name: Hello World OSX
-  - path: ../build/HelloWorld.exe
+  - path: build/HelloWorld.exe
     name: Hello World Win
