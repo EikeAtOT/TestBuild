@@ -1,5 +1,8 @@
 #!/bin/bash
+SOURCE=$PWD
+cd ..
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=Release ../source
-cmake --build . --config=Release
+echo $SOURCE
+cmake -DCMAKE_BUILD_TYPE=Release $SOURCE
+cmake --build . --config Release
