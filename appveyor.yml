@@ -1,0 +1,19 @@
+environment:
+  matrix:
+    - job_name: Mac Build
+    - job_name: Win Build
+
+for:
+  -
+    matrix:
+      only:
+        - job_name: Mac Build
+    image: macos
+    build_script: ./build.sh
+
+  -
+    matrix:
+      only:
+        - job_name: Win Build
+
+    build_script: build.cmd
