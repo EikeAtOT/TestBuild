@@ -1,0 +1,17 @@
+version: 1.0.{build}
+branches:
+  only:
+  - develop
+  - master
+skip_branch_with_pr: true
+image:
+- Previous Visual Studio 2017
+- macOS
+build_script:
+- sh: ./build/build.sh
+- cmd: build\build.cmd
+artifacts:
+  - path: build/HelloWorld
+    name: Hello World OSX
+  - path: build/Release/HelloWorld.exe
+    name: Hello World Win
